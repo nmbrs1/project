@@ -8,7 +8,8 @@
       margin: 0;
       padding: 20px;
       font-family: Arial, sans-serif;
-      background-color: #f0f2f5;
+      background: #3db2e0;
+      background: linear-gradient(90deg, rgba(61, 178, 224, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
     }
     h1 {
       text-align: center;
@@ -42,9 +43,77 @@
       width: 1em;
       margin-left: -1em;
     }
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background-color: #333;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+    .navbar a:hover {
+      background-color: #575757;
+      border-radius: 5px;
+    }
+    .content {
+      padding: 80px 20px;
+    }
   </style>
 </head>
 <body>
+  <div class="navbar">
+    <a href="index.html">Головна сторінка</a>
+    <a href="hu.html">Приєднатися</a>
+    <a href="schedule.html">Розпорядок роботи</a>
+    <a href="news.html">Оголошення</a>
+  </div>
+<div class="content">
+  
+  <table border="1" style="border-collapse: collapse; text-align: center; margin: auto;">
+    <caption style="font-weight: bold; padding: 10px;">Розпорядок роботи</caption>
+    <thead>
+        <tr>
+            <th>Час</th>
+            <th>Захід</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>9:00-10:00</td>
+            <td>Зустріч, зарядка</td>
+        </tr>
+        <tr>
+            <td>10:00-12:00</td>
+            <td>Майстер-класи (творчість, спорт)</td>
+        </tr>
+        <tr>
+            <td>12:00-13:00</td>
+            <td>Обід</td>
+        </tr>
+        <tr>
+            <td>13:00-15:00</td>
+            <td>Проектна робота, ігри</td>
+        </tr>
+        <tr>
+            <td>15:00-16:00</td>
+            <td>Підбиття підсумків дня</td>
+        </tr>
+    </tbody>
+</table>
+
+  
+
 
 <h1>План заходів літньої школи творчості та розвитку</h1>
 
@@ -103,6 +172,6 @@
     <li>13:00 — Святковий солодкий стіл</li>
   </ul>
 </div>
-
+</div>
 </body>
 </html>
